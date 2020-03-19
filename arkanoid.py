@@ -1,6 +1,4 @@
 import sys, pygame, random 
-
-
 class Arkanoid():
 
     def main(self):
@@ -82,4 +80,35 @@ class Arkanoid():
 
             if ballrect.top > height:
                 lives -= 1 
-                
+
+            xspeed = xspeed_init
+            rand = random.random()
+            if random.random() > 0.5:
+                xspeed = - xspeed
+            yspeed = yspeed_init
+            ballrect.center = width * random.random(), height/3
+            if lives == 0:
+                msg - pygame.font.Font(None, 70).render("Game Over", True, (0, 240, 0), bgcolour)
+                msgrect = msg.get_rect()
+                msgrect = msgrect.move(width/2 - (msgrect.center[0]), height/3)
+                screen.blit(msg, msgrect)
+                pygame.display.flip()
+
+
+                while True: 
+                    restart = False
+                    for event in pygame.event.get():
+                        if event.type == pygame.QUIT:
+                            sys.exit()
+                        if event.type == pygame.KEYDOWN:
+                            if event.key == pygame.K_ESCAPE:
+                                sys.exit()
+                            if not (event.key == pygame.K_LEFT or event.key == pygame.K_RIGHT):
+                                restart = True
+
+                    if restart: 
+                        screen.fill(bgcolor)
+                        wall.build_wall(width)
+                        lives = max_lives
+                        score = 0 
+                        break
