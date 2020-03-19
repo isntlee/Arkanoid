@@ -59,9 +59,9 @@ class Arkanoid():
                 if offset > 0:
                     if offset > 30:
                         xspeed = 7
-                    elif: offset > 23:
+                    elif offset > 23:
                         xspeed = 6
-                    elif: offset > 17:
+                    elif offset > 17:
                         xspeed = 5    
 
                 else: 
@@ -72,7 +72,7 @@ class Arkanoid():
                     elif offset < -17:
                         xspeed = -5
 
-            ballrect = battrect.move(xspeed, yspeed)
+            ballrect = batrect.move(xspeed, yspeed)
             if ballrect.left < 0 or ballrect.right > width:
                 xspeed = -xspeed
             if ballrect.top< 0:
@@ -112,3 +112,39 @@ class Arkanoid():
                         lives = max_lives
                         score = 0 
                         break
+            
+            if xspeed < 0 and ballrect.left < 0:
+                xspeed = -xspeed
+            
+            if xspeed > 0 and ballrect.right > width:
+                xspeed = -xspeed 
+
+            index = ballrect.collidelist(wall.brickrect)
+            if index != -1:
+                if ballrect.center[0] > wall.brickrect[index].right or \
+                ballrect.center[0] < wall.brickrect[index].left:
+                xspeed = -xspeed 
+            else:
+                yspeed = - yspeed
+            wall.brickrect[index:index + 1] = []
+            score += 10
+
+            screen.fill(bgcolor)
+            scoretext = pygame.font.Font(None, 40).render("Score: "+str(score), True, (0, 220, 0), bgcolor)
+            scoretextrect = scoretext.get_rect()
+            screen.blit(scoretext, scoretextrect)
+
+            for i in range(0, len(wall.brickrect)):
+                screen.blit(wall.brick, wall.brickrect[i])
+
+            if wall.brickrect == []:
+                wall.build_wall(width)
+                xspeed = xspeed_init
+                yspeed = yspeed_init
+                ballrect.center = width/2, height/3
+
+            screen.blit(ball, ballrect)
+            screen.blit(bat, batrect)
+            pygame.display.flip()
+
+            
