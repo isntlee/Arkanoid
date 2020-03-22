@@ -86,7 +86,7 @@ class Arkanoid():
                 yspeed = -yspeed
             if ballrect.top > height:
                 lives -= 1
-                 xspeed = xspeed_init
+                xspeed = xspeed_init
                 rand = random.random()
                 if random.random() > 0.5:
                     xspeed = -xspeed
