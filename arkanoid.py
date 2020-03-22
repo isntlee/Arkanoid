@@ -78,7 +78,7 @@ class Arkanoid():
                     elif xspeed < -17:
                         xspeed = -5
 
-            # move bat/ball
+    
             ballrect = ballrect.move(xspeed, yspeed)
             if ballrect.left < 0 or ballrect.right > width:
                 xspeed = -xspeed
