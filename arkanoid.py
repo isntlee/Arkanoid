@@ -91,7 +91,7 @@ class Arkanoid():
                 if random.random() > 0.5:
                     xspeed = -xspeed
                 yspeed = yspeed_init
-                ballrect.center = width * random.random(), height / 3
+                ballrect.center = width * random.random(), height / 2.7
                 if lives == 0:
                     msg = pygame.font.Font(None,70).render("Game Over", True, (0,240,0), bgcolour)
                     msgrect = msg.get_rect()
