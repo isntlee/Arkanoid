@@ -8,8 +8,8 @@
 
 ## How to play/install
 
--Load python files into a python IDE (easiest with PyCharm) with pygame installed
--Run arkanoid.py to start the game
+- Load python files into a python IDE (easiest with PyCharm) with pygame installed
+- Run arkanoid.py to start the game
 
 ## Exiting the game
 You can exit the game by clicking the 'X' button at the top right or the "Esc" key
