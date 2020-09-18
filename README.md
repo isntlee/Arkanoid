@@ -38,20 +38,22 @@ python3 -m pip install pygame
 Access the directory of the Arkanoid file through the command prompt and simply execute by typing:
 ```
 python3 arkanoid.py
-
 ```
 ### or 
 
 1) Load python files into a python IDE (easiest with PyCharm) with pygame installed
 
 
-2) Run arkanoid.py to start the game
+2) To start the game, run:
+```
+arkanoid.py
+```
 
 # Components
-See the relevant files for more detailed annotations. My project is made up of many parts:
+See the relevant files for more detailed annotations. My project is made up of:
 
-- main.py - Executable code to run the game is located here
-- /images - Contains the images used as the paddle and bricks.
+- arkanoid.py - Executable code to run the game is located here
+- png files - Contains the images used as the paddle and bricks.
 
 ## Exiting the game
 You can exit the game by clicking the 'X' button at the top right, or you can press 'Q' at anytime.
