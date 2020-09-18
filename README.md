@@ -59,9 +59,11 @@ See the relevant files for more detailed annotations. My project is made up of:
 You can exit the game by clicking the 'X' button at the top right, or you can press 'Q' at anytime.
 
 # Testing
-When building this game I wasn't familar with the means of unit-testing PyGame, and so resorted to manual testing. Through a relatively laborious process I have ironed out as many bugs as I could find. I am confident the game is now solid.   
+When building this game I wasn't familar with the means of unit-testing PyGame, and so resorted to manual testing. Through a relatively laborious process I had ironed out as many bugs as I could find. I was sure the game was solid.   
+
 
 ## Preview
+
 ![](arkanoid.gif?raw=true)
 
 ![](arkanoid(47fps-21ms).gif?raw=true)
