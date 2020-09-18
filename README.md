@@ -61,5 +61,7 @@ You can exit the game by clicking the 'X' button at the top right, or you can pr
 # Testing
 When building this game I wasn't familar with the means of unit-testing PyGame, and so resorted to manual testing. Through a relatively laborious process I have ironed out as many bugs as I could find. I am confident the game is now solid.   
 
-## Preview
+
+# Preview
+
 ![](arkanoid.gif?raw=true)
