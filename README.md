@@ -4,8 +4,8 @@
 # Features
 - Paddle and a ball where the ball can destroy the bricks in a wall
 - Simple level and scoring system
-- 5 lives and 1 life is lost when the ball touches the bottom of the screen
-- Game ends when lives reach 0 and player has the option to restart
+- 5 lives initially and 1 life is lost when the ball touches the bottom of the screen
+- Game is played with the arrow keys, it ends when lives reach 0
 
 # Requirements
 - Created on Python 3.8
