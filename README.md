@@ -64,8 +64,8 @@ When building this game I wasn't familar with the means of unit-testing PyGame, 
 
 ## Preview
 
-![](arkanoid.gif?raw=true)
+![](images/arkanoid.gif?raw=true)
 
-![](arkanoid(47fps-21ms).gif?raw=true)
+![](images/arkanoid(47fps-21ms).gif?raw=true)
 
-![](arkanoid(60fps-16ms).gif?raw=true)
+![](images/arkanoid(60fps-16ms).gif?raw=true)

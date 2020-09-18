@@ -45,9 +45,9 @@ class Game:
         clock = pygame.time.Clock()
 
         # Set images for game entities.
-        bat = pygame.image.load("bat.png").convert()
+        bat = pygame.image.load("images/bat.png").convert()
         batrect = bat.get_rect()
-        ball = pygame.image.load("ball.png").convert()
+        ball = pygame.image.load("images/ball.png").convert()
         ballrect = ball.get_rect()
 
         # Instantiate WallOfBricks class, and construct wall of specified width.
@@ -187,7 +187,7 @@ class Game:
 class WallOfBricks():
 
     def __init__(self):
-        self.brick = pygame.image.load("brick.png").convert()
+        self.brick = pygame.image.load("images/brick.png").convert()
         self.brickrect = self.brick.get_rect()
         self.bricklength = self.brickrect.right - self.brickrect.left
         self.brickheight = self.brickrect.bottom - self.brickrect.top
