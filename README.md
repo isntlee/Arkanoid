@@ -1,5 +1,5 @@
 # Arkanoid
- Play a game or two on my Atari arkanoid/breakout clone 
+ Play a game or two on this homemade Atari arkanoid/breakout clone 
 
 # Features
 - Paddle and a ball where the ball can destroy the bricks in a wall
@@ -10,7 +10,7 @@
 # Requirements
 - Created on Python 3.8
 - Created using Python library - PyGame
-- Developed on Windows 10, so should run on most Windows systems
+<!-- - Developed on Windows 10, so should run on most Windows systems -->
 
 ## Installing instructions for Windows 10
 ### Python 3.8
@@ -53,7 +53,7 @@ arkanoid.py
 See the relevant files for more detailed annotations. My project is made up of:
 
 - arkanoid.py - Executable code to run the game is located here
-- png files - Contains the images used as the paddle and bricks.
+- images  - Contains the png images used as the paddle, ball and bricks.
 
 ## Exiting the game
 You can exit the game by clicking the 'X' button at the top right, or you can press 'Q' at anytime.
