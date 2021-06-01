@@ -59,7 +59,7 @@ See the relevant files for more detailed annotations. My project is made up of:
 You can exit the game by clicking the 'X' button at the top right, or you can press 'Q' at anytime.
 
 # Testing
-When building this game I wasn't familar with the means of unit-testing PyGame, and so resorted to manual testing. Through a relatively laborious process I had ironed out as many bugs as I could find. I was sure the game was solid.   
+When building this game I wasn't familar with any means of unit-testing PyGame, and so I resorted to manual testing. Through a relatively laborious process I ironed out as many bugs as I could find. I was sure the game was solid.   
 
 
 ## Preview
